@@ -57,7 +57,7 @@ git clone https://github.com/shubham-s-dev/library-system-live.git
 ```bash
     uvicorn main:app --reload
 ```
--**Server will start at [http://127.0.0.1:8000](http://127.0.0.1:8000)**
+- **Server will start at [http://127.0.0.1:8000](http://127.0.0.1:8000)**
 
 ### 5. Run the Frontend (Streamlit)
 - **Open a new terminal and run:**
@@ -65,7 +65,7 @@ git clone https://github.com/shubham-s-dev/library-system-live.git
 ```bash
     streamlit run app.py
 ```
--**App will open in your browser at http://localhost:8501**
+- **App will open in your browser at http://localhost:8501**
     
 ### 🔐 Admin Access
 - **To access Admin features (Delete/Update/Issue), use the default key configured in the backend (e.g., shubham-secret-boss).**
