@@ -1,3 +1,6 @@
+## 🔴 Live Demo
+Check out the live application here: [Library Portal Link](https://library-system-live.streamlit.app/)
+
 # 🦁 Library Management System (LMS)
 
 A robust, full-stack application to manage library operations including book inventory, member management, and loan circulation. Built with **FastAPI** for the backend engine and **Streamlit** for the interactive frontend.
