@@ -63,7 +63,7 @@ def login_ui():
         with st.form("admin_login"):
             key = st.text_input("Admin Secret Key", type="password")
             if st.form_submit_button("Unlock Admin Panel"):
-                if key == "aryan-secret-boss": # HARDCODED KEY
+                if key == "shubham-secret-boss": # HARDCODED KEY
                     st.session_state['authenticated'] = True
                     st.session_state['role'] = 'Admin'
                     st.session_state['user_name'] = "Head Librarian"
