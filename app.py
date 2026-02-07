@@ -4,7 +4,7 @@ import pandas as pd
 import time
 
 st.set_page_config(page_title="LMS Portal", page_icon="🦁", layout="wide")
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://library-api-shubham.onrender.com"
 
 # --- SESSION STATE ---
 if 'authenticated' not in st.session_state:
