@@ -7,7 +7,7 @@ from datetime import datetime
 # --- CONFIGURATION ---
 st.set_page_config(page_title="LMS Portal", page_icon="🦁", layout="wide")
 
-API_URL = "https://library-api-shubha.onrender.com"
+API_URL = "https://library-api-shubham.onrender.com"
 
 # --- SESSION STATE INITIALIZATION ---
 if 'authenticated' not in st.session_state:
