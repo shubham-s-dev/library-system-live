@@ -35,12 +35,18 @@ def login_ui():
                     st.warning("Please enter your email.")
                 else:
                     try:
-                        # Fetch members to verify email
                         res = requests.get(f"{API_URL}/members")
                         if res.status_code == 200:
                             members = res.json()
-                            # Find user (Case Insensitive)
-                            user = next((m for m in members if m['email'].lower() == email.lower()), None)
+                            
+                            # --- FIX IS HERE ---
+                            # Hum check kar rahe hain ki m['email'] exist karta hai ya nahi
+                            user = next(
+                                (m for m in members 
+                                 if m.get('email') and m['email'].lower() == email.lower()), 
+                                None
+                            )
+                            # -------------------
                             
                             if user:
                                 st.session_state['authenticated'] = True
